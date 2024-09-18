@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Référence du Judo</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(96, 162, 159);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: aqua;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Arial', sans-serif;
+            color: white;
+            font-size: 3em;
+            background-color: rgb(59, 80, 240);
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px grey;
+            display: inline-block;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .logo {
+            float: left;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px grey;
+            width: 70px;
+            margin-right: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        #titre h2 {
+            border: 3px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            display: inline-block;
+            background-color: white;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .or{
+            background-color: gold;
+        }
+
+        .argent{
+            background-color: silver;
+        }
+
+        .bronze{
+            background-color: #CD7F32;
+            ;
+        }
+
+        .resultat{
+            background-color: #8CB9B5;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+
+        footer nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer nav a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .logo {
+                float: none;
+                display: block;
+                margin: 0 auto 10px;
+            }
+
+            table {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!--Mettre plus d'image ou video-->
+        <h1>La Référence du Judo</h1>
+        
+        <img style="float: left;
+        border-radius: 5px / 5px;
+        box-shadow: 5px 5px 5px grey ;
+        "src=https://as2.ftcdn.net/v2/jpg/03/14/88/73/1000_F_314887346_FhfjV1Gfms72KRYR3RORwDMWw9OLbNig.jpg
+        alt="Ceinture noire de judo pliée sur un tatami"
+        width=70px;
+        />
+         
+        <nav class="lien">
+             <!--grossir les textes de lien en les espaçant plus -->
+            <ul>
+                <li><a href="#mention">Contact</a></li>
+                &nbsp;
+                <li><a href="https://www.ffjudo.com">Voir plus...</a></li>
+                &nbsp;
+                <li><a href="https://www.paypal.com/donate/?hosted_button_id=YNXRF3CYLJ496"
+                target="_blank"> Me soutenir !</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="titre">
+            <!--faire un cadre en fond noir pour mieux voir-->
+            <div style="text-align: center;"> 
+                <h2 style="border: 3px solid black; border-radius: 10px; padding: 1px; text-align:center; display: inline-block;">
+                    Les 10 meilleurs clubs de Judo Français.</h2>
+            </div>
+        
+        </section>
+        
+        <section id="maps">
+            <!--Mettre une fonction recherché qui va utiliser l'Api de google maps 
+            et récuperer les coordonné gps (si pas gps alors laisser faire une 
+            recherche normal) pour lui proposer les clubs les plus proches de chez 
+            elle en liste. -->
+        </section>
+
+        <section id="tableau" style="margin: left;">
+            <article>
+                <table>
+                    <!--Espacé le titre du tableau pour une meilleur lisibilité-->
+                    <h3 align="left">  <u>Voici le répèrtoire des 10 meilleurs clubs de Judo en France :
+                        </u></h3>
+                    &nbsp;
+                    
+                        <tr>
+                            <th><u>Clubs</u></th>
+                            <th><u>Médaille: Or</u></th>
+                            <th><u> Médaille: Argent</u></th>
+                            <th><u> Médaille: Bronze</u></th>
+                            <th><u> Total</u></th>
+                            <th><u>Sites</u></th>
+                        </tr>
+                        
+                        <tr>
+                            <th>ASPTT Paris Judo</th>
+                            <td class="or">25</td>
+                            <td class="argent">18</td>
+                            <td class="bronze">17</td>
+                            <td class="resultat">60</td>
+                            <td><a href="http://judo-paris.fr">judo-paris.fr</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <th>Judo Club de Lyon</th>
+                            <td class="or">20</td>
+                            <td class="argent">15</td>
+                            <td class="bronze">14</td>
+                            <td class="resultat">49</td>
+                            <td><a href="http://www.judoclublugdunum.com">judoclublugdunum.com</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <th>Judo Club de Paris (13ème)</th>
+                            <td class="or">18</td>
+                            <td class="argent">12</td>
+                            <td class="bronze">15</td>
+                            <td class="resultat">45</td>
+                            <td><a href="https://www.paris-judo-13.com">paris-judo-13.com</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <th>Judo Club de Toulouse</th>
+                            <td class="or">15</td>
+                            <td class="argent">10</td>
+                            <td class="bronze">12</td>
+                            <td class="resultat">37</td>
+                            <td><a href="https://www.toulousejudo.fr">toulousejudo.fr</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <th>Judo Club de Marseille</th>
+                            <td class="or">14</td>
+                            <td class="argent">11</td>
+                            <td class="bronze">10</td>
+                            <td class="resultat">35</td>
+                            <td><a href="https://ajcm-judo.fr">ajcm-judo.fr</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <th>Judo Club de Montpellier</th>
+                            <td class="or">12</td>
+                            <td class="argent">10</td>
+                            <td class="bronze">9</td>
+                            <td class="resultat">31</td>
+                            <td><a href="https://montpellier-judo-olympic.com">montpellier-judo-olympic.com</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <th>Judo Club de Nice</th>
+                            <td class="or">10</td>
+                            <td class="argent">9</td>
+                            <td class="bronze">8</td>
+                            <td class="resultat">27</td>
+                            <td><a href="https://ojnice.com">ojnice.com</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <th>Judo Club de Rennes</th>
+                            <td class="or">8</td>
+                            <td class="argent">7</td>
+                            <td class="bronze">6</td>
+                            <td class="resultat">21</td>
+                            <td><a href="https://cpb-rennes-judo.ffjudo.com">cpb-rennes-judo.ffjudo.com</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <th>Judo Club d’Aix-en-Provence</th>
+                            <td class="or">7</td>
+                            <td class="argent">6</td>
+                            <td class="bronze">7</td>
+                            <td class="resultat">20</td>
+                            <td><a href="https://www.aucjudo.com">aucjudo.com</a></td>
+                        </tr>
+                        
+                        <tr>
+                            <th>Judo Club de Bordeaux</th>
+                            <td class="or">6</td>
+                            <td class="argent">5</td>
+                            <td class="bronze">6</td>
+                            <td class="resultat">17</td>
+                            <td><a href="https://www.jsabordeaux.fr/activites-jsa/pole-sportif/judo.html">jsabordaux.fr</a></td>
+                        </tr>
+                </table>
+            </article>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <!--mettre le footer en bande grisé pour mieux voir la fin de la page et 
+        mettre en valeur le soutien.-->
+        &nbsp;
+        <section id="navigation">
+            <nav>
+            
+                <a href="mailto:titouan.conquere-de-monbrison@efrei.net" style="color: white; text-decoration: none;"><u>
+                    Contact</u></a>
+                &nbsp;
+                <a href="https://www.ijf.org"><u>Voir plus...</u></a>
+                &nbsp;
+                <a href="https://www.paypal.com/donate/?hosted_button_id=YNXRF3CYLJ496"
+                    target="_blank"><u>Me soutenir !</u></a>
+            </nav>
+        </section>
+        <section id="mention">
+            <p>
+                <a href="mailto:titouan.conquere-de-monbrison@efrei.net" style="color: white; text-decoration: none;">
+                    titouan.conquere-de-monbrison@efrei.net
+                </a><br>   
+
+                +33 06 66 18 65 63<br>
+                Etudiant a l'Efrei Paris.
+                30-32 Avenue de la république.<br>
+                &copy; 2024 La Référence du Judo. Tous droits réservés.
+            </p>
+        </section>
+        
+    </footer>
+</body>
+</html>
