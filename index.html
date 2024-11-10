@@ -1,199 +1,278 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Référence du Judo</title>
-    
-    <link rel="stylesheet" href="style.css"/>
 
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <!--Mettre plus d'image ou video-->
-        <h1>La Référence du Judo</h1>
-        
-        <img style="float: left;
-        border-radius: 5px / 5px;
-        box-shadow: 5px 5px 5px grey ;
-        "src=https://as2.ftcdn.net/v2/jpg/03/14/88/73/1000_F_314887346_FhfjV1Gfms72KRYR3RORwDMWw9OLbNig.jpg
-        alt="Ceinture noire de judo pliée sur un tatami"
-        width=70px;
-        />
-         
-        <nav class="lien">
-             <!--grossir les textes de lien en les espaçant plus -->
-            <ul>
-                <li><a href="#mention">Contact</a></li>
-                &nbsp;
-                <li><a href="https://www.ffjudo.com">Voir plus...</a></li>
-                &nbsp;
-                <li><a href="https://www.paypal.com/donate/?hosted_button_id=YNXRF3CYLJ496"
-                target="_blank"> Me soutenir !</a></li>
-            </ul>
-        </nav>
+      <h1>La Référence du Judo</h1>
+
+      <img style="float: left; border-radius: 5px / 5px; box-shadow: 5px 5px 5px
+      grey ;
+      "src=https://as2.ftcdn.net/v2/jpg/03/14/88/73/1000_F_314887346_FhfjV1Gfms72KRYR3RORwDMWw9OLbNig.jpg
+      alt="Ceinture noire de judo pliée sur un tatami" width=70px; />
+
+      <nav class="start">
+        <ul>
+        <li><a href="#tableau">Classement</a></li>
+          &nbsp;
+        <li><a href="#defJudo">C'est quoi ?</a></li>
+          &nbsp;
+          <li><a href="#philoJudo">Philosophie</a></li>
+          &nbsp;
+          <li><a href="#mention">Contact</a></li>
+          &nbsp;
+          <li><a href="https://www.ffjudo.com">Voir plus...</a></li>
+          &nbsp;
+          <li>
+            <a
+              href="https://www.paypal.com/donate/?hosted_button_id=YNXRF3CYLJ496"
+              target="_blank"
+            >
+              Me soutenir !</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section id="titre">
-            <!--faire un cadre en fond noir pour mieux voir-->
-            <div style="text-align: center;"> 
-                <h2 style="border: 3px solid black; border-radius: 10px; padding: 1px; text-align:center; display: inline-block;">
-                    Les 10 meilleurs clubs de Judo Français.</h2>
-            </div>
-        
-        </section>
-        
-        <section id="maps">
-            <!--Mettre une fonction recherché qui va utiliser l'Api de google maps 
-            et récuperer les coordonné gps (si pas gps alors laisser faire une 
-            recherche normal) pour lui proposer les clubs les plus proches de chez 
-            elle en liste. -->
-        </section>
+      <section id="titre">
+        <div style="text-align: center">
+          <h2
+            style="
+              border: 3px solid black;
+              border-radius: 10px;
+              padding: 1px;
+              text-align: center;
+              display: inline-block;
+            "
+          >
+            Les 10 meilleurs clubs de Judo Français.
+          </h2>
+        </div>
+      </section>
 
-        <section id="tableau" style="margin: left;">
-            <h3><u>Voici le répèrtoire des 10 meilleurs clubs de Judo en France :</u>
-            </h3>
+      <section id="tableau" style="margin: left">
+        <h3>
+          <u>Voici le répèrtoire des 10 meilleurs clubs de Judo en France :</u>
+        </h3>
+
+        <article>
+          <table>
+            <tr>
+              <th><u>Clubs</u></th>
+              <th><u>Médaille: Or</u></th>
+              <th><u> Médaille: Argent</u></th>
+              <th><u> Médaille: Bronze</u></th>
+              <th><u> Total</u></th>
+              <th><u>Sites</u></th>
+            </tr>
+
+            <tr>
+              <th>ASPTT Paris Judo</th>
+              <td class="or">25</td>
+              <td class="argent">18</td>
+              <td class="bronze">17</td>
+              <td class="resultat">60</td>
+              <td class="sites">
+                <a href="http://judo-paris.fr">judo-paris.fr</a>
+              </td>
+            </tr>
+
+            <tr>
+              <th>Judo Club de Lyon</th>
+              <td class="or">20</td>
+              <td class="argent">15</td>
+              <td class="bronze">14</td>
+              <td class="resultat">49</td>
+              <td class="sites">
+                <a href="http://www.judoclublugdunum.com"
+                  >judoclublugdunum.com</a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <th>Judo Club de Paris (13ème)</th>
+              <td class="or">18</td>
+              <td class="argent">12</td>
+              <td class="bronze">15</td>
+              <td class="resultat">45</td>
+              <td class="sites">
+                <a href="https://www.paris-judo-13.com">paris-judo-13.com</a>
+              </td>
+            </tr>
+
+            <tr>
+              <th>Judo Club de Toulouse</th>
+              <td class="or">15</td>
+              <td class="argent">10</td>
+              <td class="bronze">12</td>
+              <td class="resultat">37</td>
+              <td class="sites">
+                <a href="https://www.toulousejudo.fr">toulousejudo.fr</a>
+              </td>
+            </tr>
+
+            <tr>
+              <th>Judo Club de Marseille</th>
+              <td class="or">14</td>
+              <td class="argent">11</td>
+              <td class="bronze">10</td>
+              <td class="resultat">35</td>
+              <td class="sites">
+                <a href="https://ajcm-judo.fr">ajcm-judo.fr</a>
+              </td>
+            </tr>
+
+            <tr>
+              <th>Judo Club de Montpellier</th>
+              <td class="or">12</td>
+              <td class="argent">10</td>
+              <td class="bronze">9</td>
+              <td class="resultat">31</td>
+              <td class="sites">
+                <a href="https://montpellier-judo-olympic.com"
+                  >montpellier-judo-olympic.com</a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <th>Judo Club de Nice</th>
+              <td class="or">10</td>
+              <td class="argent">9</td>
+              <td class="bronze">8</td>
+              <td class="resultat">27</td>
+              <td class="sites"><a href="https://ojnice.com">ojnice.com</a></td>
+            </tr>
+
+            <tr>
+              <th>Judo Club de Rennes</th>
+              <td class="or">8</td>
+              <td class="argent">7</td>
+              <td class="bronze">6</td>
+              <td class="resultat">21</td>
+              <td class="sites">
+                <a href="https://cpb-rennes-judo.ffjudo.com"
+                  >cpb-rennes-judo.ffjudo.com</a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <th>Judo Club d’Aix-en-Provence</th>
+              <td class="or">7</td>
+              <td class="argent">6</td>
+              <td class="bronze">7</td>
+              <td class="resultat">20</td>
+              <td class="sites">
+                <a href="https://www.aucjudo.com">aucjudo.com</a>
+              </td>
+            </tr>
+
+            <tr>
+              <th>Judo Club de Bordeaux</th>
+              <td class="or">6</td>
+              <td class="argent">5</td>
+              <td class="bronze">6</td>
+              <td class="resultat">17</td>
+              <td class="sites">
+                <a
+                  href="https://www.jsabordeaux.fr/activites-jsa/pole-sportif/judo.html"
+                  >jsabordaux.fr</a
+                >
+              </td>
+            </tr>
+          </table>
+          <img class="map" src="images/Map France.png" alt="image de la france vu du ciel"/>
+        </article>
+      </section>
+
+      <section class="defJudo">
+        <h3><u>Qu'est-ce que le Judo ?</u></h3>
+        <p>
+          Le judo, qui signifie "voie de la souplesse", est un art martial
+          japonais et un sport olympique créé par <u>Jigoro Kano en 1882</u>. Le
+          judo repose sur l'utilisation de la force de l'adversaire pour le
+          déséquilibrer, le projeter ou le contrôler au sol, plutôt que sur la
+          force brute. Cet art met l'accent sur le contrôle de soi, la précision
+          des mouvements et le respect de l'autre.
+        </p>
+
+        <h3 id="philoJudo"><u>La Philosophie du Judo:</u></h3>
+        <p>
+          Au-delà de l'aspect physique, le judo est une philosophie de vie. Il
+          est fondé sur le concept de "mutuel respect et entraide" (Jita Kyoei),
+          selon lequel la pratique doit permettre aux deux judokas de grandir
+          ensemble, à la fois mentalement et physiquement.
+        </p> 
+        <u><a href="https://fr.wikipedia.org/wiki/Judo#:~:text=L%27honneur%2C%20c%27est,taire%20lorsque%20monte%20sa%20colère." 
+            style="color: #E6E6E6; background-color: #282727;" target="_blank">Les Valeurs Essentielles du Judo:</a>
+        </u> 
+        <p>Le judo véhicule des valeurs fondamentales, qui
+          sont également enseignées aux pratiquants de tous âges: <br>
+          
+          <li> <u>Respect:</u> Les judokas apprennent à respecter leurs enseignants, leurs partenaires,
+          et les règles. Le respect est essentiel dans toutes les interactions. </li> <br>
+          
+          <li><u>Courage: </u>Le judo demande de la persévérance et la volonté de
+          surmonter les défis, tant sur le tatami que dans la vie quotidienne. </li> <br>
+          
+          <li><u>Politesse:</u> Les judokas font preuve de courtoisie et de bonnes
+          manières, car le judo est aussi un art du comportement. </li> <br>
+          
+          <li><u>Contrôle de soi:</u> Pour être un bon judoka, il est crucial de contrôler ses
+          émotions et ses actions, même dans des situations difficiles. </li> <br>
+          
+          <li><u>Sincérité:</u> La sincérité dans la pratique du judo et dans
+          l’apprentissage des techniques est essentielle pour progresser. </li> <br> 
+          
+          <li><u>Amitié:</u> Bien que le judo soit un sport de compétition, il favorise les liens
+          d’amitié et de camaraderie entre les pratiquants. </li>
+        </p>
         
-            <article>
-                <table>
-                    <!--Espacé le titre du tableau pour une meilleur lisibilité-->
-                    
-                        <tr>
-                            <th><u>Clubs</u></th>
-                            <th><u>Médaille: Or</u></th>
-                            <th><u> Médaille: Argent</u></th>
-                            <th><u> Médaille: Bronze</u></th>
-                            <th><u> Total</u></th>
-                            <th><u>Sites</u></th>
-                        </tr>
-                        
-                        <tr>
-                            <th>ASPTT Paris Judo</th>
-                            <td class="or">25</td>
-                            <td class="argent">18</td>
-                            <td class="bronze">17</td>
-                            <td class="resultat">60</td>
-                            <td><a href="http://judo-paris.fr">judo-paris.fr</a></td>
-                        </tr>
-                        
-                        <tr>
-                            <th>Judo Club de Lyon</th>
-                            <td class="or">20</td>
-                            <td class="argent">15</td>
-                            <td class="bronze">14</td>
-                            <td class="resultat">49</td>
-                            <td><a href="http://www.judoclublugdunum.com">judoclublugdunum.com</a></td>
-                        </tr>
-                        
-                        <tr>
-                            <th>Judo Club de Paris (13ème)</th>
-                            <td class="or">18</td>
-                            <td class="argent">12</td>
-                            <td class="bronze">15</td>
-                            <td class="resultat">45</td>
-                            <td><a href="https://www.paris-judo-13.com">paris-judo-13.com</a></td>
-                        </tr>
-                        
-                        <tr>
-                            <th>Judo Club de Toulouse</th>
-                            <td class="or">15</td>
-                            <td class="argent">10</td>
-                            <td class="bronze">12</td>
-                            <td class="resultat">37</td>
-                            <td><a href="https://www.toulousejudo.fr">toulousejudo.fr</a></td>
-                        </tr>
-                        
-                        <tr>
-                            <th>Judo Club de Marseille</th>
-                            <td class="or">14</td>
-                            <td class="argent">11</td>
-                            <td class="bronze">10</td>
-                            <td class="resultat">35</td>
-                            <td><a href="https://ajcm-judo.fr">ajcm-judo.fr</a></td>
-                        </tr>
-                        
-                        <tr>
-                            <th>Judo Club de Montpellier</th>
-                            <td class="or">12</td>
-                            <td class="argent">10</td>
-                            <td class="bronze">9</td>
-                            <td class="resultat">31</td>
-                            <td><a href="https://montpellier-judo-olympic.com">montpellier-judo-olympic.com</a></td>
-                        </tr>
-                        
-                        <tr>
-                            <th>Judo Club de Nice</th>
-                            <td class="or">10</td>
-                            <td class="argent">9</td>
-                            <td class="bronze">8</td>
-                            <td class="resultat">27</td>
-                            <td><a href="https://ojnice.com">ojnice.com</a></td>
-                        </tr>
-                        
-                        <tr>
-                            <th>Judo Club de Rennes</th>
-                            <td class="or">8</td>
-                            <td class="argent">7</td>
-                            <td class="bronze">6</td>
-                            <td class="resultat">21</td>
-                            <td><a href="https://cpb-rennes-judo.ffjudo.com">cpb-rennes-judo.ffjudo.com</a></td>
-                        </tr>
-                        
-                        <tr>
-                            <th>Judo Club d’Aix-en-Provence</th>
-                            <td class="or">7</td>
-                            <td class="argent">6</td>
-                            <td class="bronze">7</td>
-                            <td class="resultat">20</td>
-                            <td><a href="https://www.aucjudo.com">aucjudo.com</a></td>
-                        </tr>
-                        
-                        <tr>
-                            <th>Judo Club de Bordeaux</th>
-                            <td class="or">6</td>
-                            <td class="argent">5</td>
-                            <td class="bronze">6</td>
-                            <td class="resultat">17</td>
-                            <td><a href="https://www.jsabordeaux.fr/activites-jsa/pole-sportif/judo.html">jsabordaux.fr</a></td>
-                        </tr>
-                </table>
-                <img id="map" src="images/Map France.png"/>
-            </article>
-        </section>
-
-
+      </section>
     </main>
 
     <footer>
-        <!--mettre le footer en bande grisé pour mieux voir la fin de la page et 
-        mettre en valeur le soutien.-->
-        &nbsp;
-        <section id="navigation">
-            <nav>
-            
-                <a href="mailto:titouan.conquere-de-monbrison@efrei.net" style="color: white; text-decoration: none;"><u>
-                    Contact</u></a>
-                &nbsp;
-                <a href="https://www.ijf.org"><u>Voir plus...</u></a>
-                &nbsp;
-                <a href="https://www.paypal.com/donate/?hosted_button_id=YNXRF3CYLJ496"
-                    target="_blank"><u>Me soutenir !</u></a>
-            </nav>
-        </section>
-        <section id="mention">
-            <p>
-                <a href="mailto:titouan.conquere-de-monbrison@efrei.net" style="color: white; text-decoration: none;">
-                    titouan.conquere-de-monbrison@efrei.net
-                </a><br>   
+      &nbsp;
+      <section class="navigation">
+        <nav class="end">
+          <a
+            href="mailto:titouan.conquere-de-monbrison@efrei.net"
+            style="color: white; text-decoration: none"
+            ><u> Contact</u></a
+          >
+          &nbsp;
+          <a href="https://www.ijf.org"><u>Voir plus...</u></a>
+          &nbsp;
+          <a
+            href="https://www.paypal.com/donate/?hosted_button_id=YNXRF3CYLJ496"
+            target="_blank"
+            ><u>Me soutenir !</u></a
+          >
+        </nav>
+      </section>
+      <section id="mention">
+        <p>
+          <a
+            href="mailto:titouan.conquere-de-monbrison@efrei.net"
+            style="color: white; text-decoration: none"
+          >
+            titouan.conquere-de-monbrison@efrei.net </a
+          ><br />
 
-                +33 06 66 18 65 63<br>
-                Etudiant a l'Efrei Paris.
-                30-32 Avenue de la république.<br>
-                &copy; 2024 La Référence du Judo. Tous droits réservés.
-            </p>
-        </section>
-        
+          +33 06 66 18 65 63<br />
+          Etudiant a l'Efrei Paris. 30-32 Avenue de la république.<br />
+          &copy; 2024 La Référence du Judo. Tous droits réservés.
+        </p>
+      </section>
     </footer>
-</body>
+  </body>
 </html>

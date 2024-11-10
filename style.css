@@ -1,53 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(96, 162, 159);
+    font-family: 'Roboto', sans-serif;
+    background-color: #333333;
+    color: #E6E6E6;
     margin: 0;
     padding: 0;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 header {
-    background-color: aqua;
+    background-color: #282727;
     padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
-    font-family: 'Arial', sans-serif;
-    color: white;
-    font-size: 3em;
-    background-color: rgb(59, 80, 240);
+    font-family: 'Roboto', sans-serif;
+    color: #E6E6E6;
+    font-size: 2.5em;
+    background-color: #4D4D4D;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px grey;
+    padding: 10px 20px;
+    margin: 0 auto;
     display: inline-block;
-    padding: 10px;
-    margin: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
 .logo {
     float: left;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px grey;
     width: 70px;
     margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+nav.start {
+    position: fixed;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    background-color: #282727;
+    color: white;
+    transition: top 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+  nav.start:hover {
+    top: 0;
+}
+
+ nav.start a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav.end {
+    position: relative;
+    background-color: #282727;
+    padding: 10px 0;
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    display: inline-block;
 }
 
 nav a {
-    color: black;
+    color: #B3B3B3;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #E6E6E6;
+    background-color: #4D4D4D;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 main {
@@ -56,76 +105,102 @@ main {
 }
 
 #titre h2 {
-    border: 3px solid black;
+    font-weight: 500;
+    color: #333333;
+    background-color: #B3B3B3;
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px 20px;
     text-align: center;
     display: inline-block;
-    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+h3 {
+    color: #B3B3B3;
 }
 
 #tableau > article {
     display: inline-flex;
     height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 table {
-    width: 20%;
-    height: auto;
+    width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    
+    background-color: #4D4D4D;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 th, td {
-    border: 2px solid black;
-    padding: 10px;
+    border: 1px solid #333333;
+    padding: 15px;
     text-align: center;
+    color: #E6E6E6;
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #282727;
+    font-weight: 500;
 }
 
-.or{
+.or {
     background-color: gold;
 }
 
-.argent{
+.argent {
     background-color: silver;
 }
 
-.bronze{
+.bronze {
     background-color: #CD7F32;
-    ;
 }
 
-.resultat{
+.resultat {
     background-color: #8CB9B5;
 }
 
+.sites {
+    background-color: #E6E6E6;
+    color: #333333;
+}
+
+.map {
+    width: 90%;
+    max-width: 700px;
+    height: 750px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #282727;
+    color: #B3B3B3;
     text-align: center;
     padding: 20px;
+    padding-top: 20px;
     margin-top: auto;
 }
 
 footer nav a {
-    color: white;
+    color: #B3B3B3;
     margin: 0 10px;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 footer nav a:hover {
-    text-decoration: underline;
+    color: #E6E6E6;
 }
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     .logo {
@@ -135,6 +210,11 @@ footer nav a:hover {
     }
 
     table {
-        font-size: 0.8em;
+        font-size: 0.9em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
     }
 }
