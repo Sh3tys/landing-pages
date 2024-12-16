@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
 
-html {
+* {
     scroll-behavior: smooth;    
 }
-
 
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #333333;
     color: #E6E6E6;
-    margin: 0;
-    padding: 0;
-    padding-top: 60px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-width: 723px;
 }
 
+
+/*----------------------- HEADER NAV -------------------------*/
 header {
     background-color: #282727;
     padding: 20px;
@@ -25,7 +25,7 @@ header {
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Sawarabi Mincho', serif;
     color: #E6E6E6;
     font-size: 2.5em;
     background-color: #4D4D4D;
@@ -42,46 +42,24 @@ h1 {
     margin-right: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-}
+}   
 
-nav.start {
-    position: fixed;
-    top: -50px;
-    left: 0;
-    width: 100%;
-    background-color: #282727;
-    color: white;
-    transition: top 0.3s ease-in-out;
-    z-index: 1000;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-  nav.start:hover {
-    top: 0;
-}
-
- nav.start a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    display: inline-block;
-}
-
-nav.end {
-    position: relative;
-    background-color: #282727;
-    padding: 10px 0;
-    text-align: center;
-}
-
 nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
     gap: 20px;
+    justify-content: space-between;
+    flex: 1;
 }
 
 nav ul li {
-    display: inline-block;
+    display: flex;
 }
 
 nav a {
@@ -100,6 +78,22 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+#burger {
+    display: flex;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    text-align: right;
+}
+  
+#burger span {
+    width: 65px;
+    height: 13px;
+    background-color: black;
+}
+
+/*----------------------- MAIN -------------------------*/
 main {
     flex-grow: 1;
     padding: 20px;
@@ -121,18 +115,19 @@ h3 {
 }
 
 #tableau > article {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     height: 100%;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
+    justify-content: flex-start;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
     background-color: #4D4D4D;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     overflow: hidden;
 }
 
@@ -169,29 +164,77 @@ th {
     color: #333333;
 }
 
-.map {
-    width: 90%;
-    max-width: 700px;
-    height: 750px;
-    margin: 20px auto;
-    display: block;
+.image-container {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+}
+
+.image-container img {
+    width: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+    margin: 0;
+}
+
+.Judo {
+    font-family: 'Noto Serif JP', serif;
+    background-image: linear-gradient(rgba(51,51,51,0.95), rgba(51,51,51,0.95)), url("./Image/carte de la france.webp");
+    border: none;
+}
+
+.title-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px
+}
+
+.text {
+    text-align: center;
+}
+
+.video-judo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.video-judo video {
+    border: 1px solid #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.6);
 }
 
 footer {
     background-color: #282727;
     color: #B3B3B3;
-    text-align: center;
     padding: 20px;
-    padding-top: 20px;
     margin-top: auto;
+    text-align: center;
+}
+
+footer .navigation {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
 }
 
 footer nav a {
     color: #B3B3B3;
-    margin: 0 10px;
     text-decoration: none;
+    gap: 200px;
     transition: color 0.3s ease;
 }
 
@@ -199,23 +242,43 @@ footer nav a:hover {
     color: #E6E6E6;
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.8em;
+#mention {
+    font-size: 14px;
+    color: #B3B3B3;
+}
+
+#mail {
+    color: white;
+    text-decoration: none;
+}
+
+#musique {
+    color: white;
+    text-decoration: none;
+    display: none;
+}
+
+
+/*======== PART NAV ===============*/ 
+@media (max-width: 1017px) {
+    .logo-container{
+        margin:0;
     }
 
-    .logo {
-        float: none;
-        display: block;
-        margin: 0 auto 10px;
+    header nav ul {
+        display: none;
+    }
+    
+    #burger {
+        display: flex;
+        margin-left: auto;
     }
 
-    table {
-        font-size: 0.9em;
-    }
+}
 
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
+/*======== PART TABLEAU ===============*/ 
+@media (max-width: 1017px) {
+    .image-container{
+        display: none;
     }
 }
