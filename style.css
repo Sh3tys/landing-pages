@@ -24,20 +24,35 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-header img {
+header #logo {
+    background: none;
     float: left;
-    border-radius: 5px / 5px;
-    box-shadow: 5px 5px 5px grey;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0.5px solid #000;
 }
 
-header button {
+#audio-page {
+    display: flex;
     float: right;
+}
+
+#audioControl {
+    background: none;
     border: none;
-    color: white;
-    padding: 30px 32px;
     cursor: pointer;
-    border-radius: 5px;
-    background-color: #333333;
+}
+  
+#buttonImage {
+    border-radius: 8px;
+    padding: 10px;
+    width: 50px;
+    transition: transform 0.2s ease;
+}
+  
+#buttonImage:hover {
+    background-color: #4D4D4D;
+    transform: scale(1.1);
 }
 
 h1 {
@@ -266,12 +281,6 @@ footer nav a:hover {
 #mail {
     color: white;
     text-decoration: none;
-}
-
-#musique {
-    color: white;
-    text-decoration: none;
-    display: none;
 }
 
 

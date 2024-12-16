@@ -11,8 +11,14 @@
     <header>
       <h1>La Référence du Judo</h1>
 
-      <img src="./Image/Image judo japon.jpg" alt="Drapeau judo avec ecrit judo en noir" width=70px; />
-      <button></button>
+      <img id="logo" src="./Image/Image judo japon.jpg" alt="Drapeau judo avec ecrit judo en noir" width=70px; />
+      
+      <div id="audio-page">
+        <audio id="myAudio" src="./audio/C418 - Moog City 2 (Minecraft Volume Beta).mp3" autoplay loop></audio>
+        <button id="audioControl">
+          <img id="buttonImage" src="./Image/song on.png" alt="Play/Pause" width="50" />
+        </button>
+      </div>
 
       <nav class="start">
         <ul>
@@ -233,10 +239,6 @@
         <div id="judo-media">
           <video src="./videos/TOP-10-CRAZY-IPPONS-EVER.webm" controls autoplay muted loop></video>
         </div>
-
-        <div id="audio">
-          <audio src="./audio/C418 - Moog City 2 (Minecraft Volume Beta).mp3" autoplay loop ></audio>
-        </div>
       </section>
 
     </main>
@@ -272,5 +274,6 @@
           </p>
       </section>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
